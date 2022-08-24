@@ -34,27 +34,28 @@ const random = simple;
 // argument, this argument goes to the function. Essentially, the random
 // variable puts the argument into a return statement somewhere, in this case it is
 // a + 2
-display(random(3));
+
+// display(random(3));
+
 
 
 // Like in the case below, my_sum variable takes 2 arguments, and they have to go
-// to a return statement, in this case, it is return a + b. So in the case above
+// to a return statement, in this case, it is return a + b. You need a function to 
+// take that value and return
 const my_sum = (a,b) => a + b;
-display(my_sum(1,2));
+// display(my_sum(1,2));
 
-//Trying lambda function
+// Trying lambda function
 
 function my_complex2(x){
-    function my_sum(){
+    function my_sum(y){
         return x + y;
     }
     return my_sum;
 }
 
-const my_sum = (a,b) => a + b;
-
-const my_complex1 = x => my_complex2(3);
-display(my_complex1(2));
+const whyman = my_complex2(5);
+display(whyman(2));
 
 
 
