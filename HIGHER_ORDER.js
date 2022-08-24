@@ -73,9 +73,9 @@ function sum1(term,a,next_order,b){
 
 
 function sum_integer(a,b){
-    
+    return sum1(identity,a,next,b);
 }
-display(sum1(identity,1,next,5));
+display(sum_integer(1,4));
 
 
 
