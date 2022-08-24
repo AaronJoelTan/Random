@@ -55,7 +55,27 @@ function my_complex2(x){
 }
 
 const whyman = my_complex2(5);
-display(whyman(2));
+// display(whyman(2));
+
+
+//Trying higher order function, sum of integers from a to b
+
+function identity(x){
+    return x;
+}
+
+function next(x){
+    return x+1;
+}
+function sum1(term,a,next_order,b){
+    return a > b ? 0 : a + sum1(term,next_order(a),next_order,b);
+}
+
+
+function sum_integer(a,b){
+    
+}
+display(sum1(identity,1,next,5));
 
 
 
