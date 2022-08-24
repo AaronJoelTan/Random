@@ -68,6 +68,7 @@ function next(x){
     return x+1;
 }
 function sum1(term,a,next_order,b){
+    // Recursion happened here
     return a > b ? 0 : a + sum1(term,next_order(a),next_order,b);
 }
 
